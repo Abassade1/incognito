@@ -1,0 +1,1978 @@
+$primary: #DE4E48
+$secondary: #222222
+$button: #F7CE34
+$button_text: #061A33
+$action_bg: #326994
+$footer_col: #171615
+ 
+    
+body 
+    font-family: 'Lato',Roboto, open-sans
+    margin: 0 !important
+    font-size: 20px
+    -webkit-font-smoothing: antialiased
+    line-height: 1.6
+    background: #fff
+    position: relative
+
+    #more 
+        display: none
+
+    #more2 
+        display: none
+
+    .scroll
+            position: fixed
+            top: 88%
+            right: 10px
+            transform: rotate(-90deg) 
+            z-index: 100000 !important
+
+            p
+                 font-weight: 600
+                 color: #94D769
+                 letter-spacing: 1.44px 
+                 font-size: 12px
+                 text-transform: uppercase
+            
+            @media only screen and (max-width: 550px)
+                display: none
+
+
+    h5
+        color: #94D769
+        text-transform: uppercase
+        font-weight: 600
+
+    @mixin text_transition
+        animation: textAnimation
+        animation-duration: 3s
+        animation-fill-mode: forwards
+        animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1)
+
+    h3
+        color: $primary
+        font-weight: 600
+        font-size: 1.8rem
+        animation: textAnimation
+        animation-delay: 0.1s
+        @include text_transition
+        
+        @media only screen and (max-width: 550px)
+            text-align: left
+
+        @media (max-width: 575.98px)
+            font-size: 24px
+
+    .dropdown-submenu 
+        position: relative
+
+    .dropdown-submenu .dropdown-menu 
+        top: 0
+        left: 100%
+        margin-top: -1px
+
+    .nav-link
+        font-size: 10px
+        font-weight: 500
+
+    .nav-link-black
+        color: #212121 !important
+
+    .dropdown-item
+        
+        font-size: 12px
+        line-height: 20px
+        text-transform: uppercase
+
+    button
+        color: #ffffff
+        background: $primary
+        // border-radius: 5px
+        padding: 15px  80px
+        border: 0
+        cursor: pointer
+        outline: none
+        transition: 0.5s
+        box-shadow: 0 10px 20px rgba(0,0,0,0.10)
+        font-size: 16px
+        font-weight: 700
+        @media only screen and (max-width: 550px)
+            // width: 100%
+        @media (min-width: 768px) and (max-width: 991.98px)
+            padding: 15px 50px
+
+
+    button:hover
+        color: #fff
+        background: $primary
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25)
+        transform: translateX(-3px)
+
+
+ 
+
+    .bg-dark
+        background: transparent !important
+        @media only screen and (max-width: 550px)
+            background: $primary !important
+
+    .bg-dark.scrolled
+        background: rgba(0,0,0,0.8) !important
+
+    .bg-dark-black
+        background: transparent !important
+        @media only screen and (max-width: 550px)
+            background: $primary !important
+
+    .bg-dark-black.scrolled
+        background: #fff !important
+
+   
+    .logo
+        height: 50px
+    
+    // HERO NEW
+    @mixin hero_headers
+        background-size: cover
+        height: 800px
+        position: relative
+        text-align: left
+        overflow: hidden
+        width: auto
+        min-height: 800px
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        @media only screen and (max-width: 550px)
+            width: 100%
+        @media (max-width: 767.98px)
+            width: 100%
+
+    .hero
+        background:  url("assets/img/about_incognito.jpg") no-repeat center center scroll
+        @include hero_headers
+       
+        
+        
+    .header_illustr
+        background:  url("assets/img/project_management_header.jpg") no-repeat center center scroll
+        @include hero_headers
+
+
+    .header_process-management
+        background:  url("assets/img/process_management_header.jpg") no-repeat center center scroll
+        @include hero_headers
+
+    .header_tech_services
+        background:  url("assets/img/tech-services.jpg") no-repeat center center scroll
+        background-size: cover
+        @include hero_headers
+    
+
+    
+
+    .service_image
+        background:  url("assets/img/network_center.jpg") no-repeat
+        @include hero_headers
+
+        @media (max-width: 575.98px)
+            height: 500px
+            margin: 30px 0 
+
+    .service_vpn
+        background:  url("assets/img/vpn_network.jpg") no-repeat
+        @include hero_headers
+        @media (max-width: 575.98px)
+            height: 500px
+            margin: 30px 0 
+
+    .service_project_manager
+        background:  url("assets/img/project_manager.jpg") no-repeat
+        @include hero_headers
+        @media (max-width: 575.98px)
+            height: 500px
+            margin: 30px 0 
+
+    .service_iot
+        background:  url("assets/img/IOT.png") no-repeat
+        @include hero_headers
+        @media (max-width: 575.98px)
+            height: 500px
+            margin: 30px 0 
+
+    .service_endpoint_sec
+        background:  url("assets/img/Network_Security.jpeg") no-repeat
+        @include hero_headers
+        @media (max-width: 575.98px)
+            height: 500px
+            margin: 30px 0 
+
+
+    .header_project_manag
+        background: #FDA9A9
+        background-size: cover
+        height: 95vh
+        position: relative
+        text-align: left
+        overflow: hidden
+        width: auto
+
+    // Headers
+    @mixin headers
+        height: 500px
+        position: relative
+        text-align: left
+        overflow: hidden
+        width: auto
+        min-height: 500px
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        
+    .header_sructure_cable
+        background:  url("assets/img/structured-cabling.jpg") no-repeat center center scroll
+        @include headers
+
+    .header_collab
+        background:  url("assets/img/team_dev_header.jpg") no-repeat center center scroll
+        @include headers
+        
+
+    .header_network_management
+        background:  url("assets/img/network-management.jpg") no-repeat center center scroll
+        @include headers
+
+    .header_network_design
+        background:  url("assets/img/network-center.jpg") no-repeat center center scroll
+        @include headers
+        
+    .header_wireless_solution
+        background:  url("assets/img/it-infrastructure.jpg") no-repeat center center scroll
+        @include headers
+        
+    .header_manager_it_services
+        background:  url("assets/img/header_technical_project_management.jpg") no-repeat center center scroll
+        @include headers
+
+    .header_iot
+        background:  url("assets/img/iot2.png") no-repeat center center scroll
+        @include headers
+    
+    .header_vpn
+        background:  url("assets/img/vpn_header.jpg") no-repeat center center scroll
+        background-size: cover
+        @include headers
+        
+
+
+    .header_endpoint_networking_sec
+        background:  url("assets/img/Network-Security.jpeg")no-repeat center center scroll
+        @include headers
+
+    
+
+    .header_project_mang_consulting
+        background:  url("assets/img/project-mang-consulting.jpg") no-repeat
+        @include headers
+
+
+
+    .header_project_training
+        background:  url("assets/img/training_header.jpg") no-repeat center center scroll
+        @include headers
+
+    .contact-us-header
+        background:  url("assets/img/contact-us.jpg") no-repeat
+        @include headers
+
+   
+
+        
+    
+    @mixin short_headers  
+        background-size: cover
+        height: 50vh
+        position: relative
+        text-align: left
+        overflow: hidden
+        width: auto 
+
+    .header_our_people
+        background:  url("assets/img/our_people_header.jpg") no-repeat
+        @include short_headers
+
+    .header_management
+        background:  url("assets/img/slider3.jpg") no-repeat
+        @include short_headers
+    
+    
+    
+
+    //overlay
+    .overlay
+        height: 100%
+        width: 100%
+        color: #fff
+        opacity: 0.97
+        position: absolute
+        // overflow: auto
+        background: rgba(0,0,0,0.75)
+
+    .slider_content
+        position: relative
+        width: 100%
+        min-height: 95vh
+
+        @media (max-width: 575.98px)
+            min-height: 100vh
+
+   
+        .social_media
+            position: absolute
+            bottom: 40px
+            @media (min-width: 576px) and (max-width: 767.98px)
+                display: none
+            img
+                height: 10px
+    
+    
+        .social_icons
+            display: grid
+            grid-template-columns: repeat(3, auto)
+            max-width: 100px
+            grid-gap: 1%
+           
+
+            img
+                height: 16px    
+             
+        
+        .vector_fil
+            max-width: 100%
+            width: auto
+            height: 200px
+            left: 50%
+            bottom: 70%
+            position: absolute
+            z-index: -1 !important
+            padding-top: 5%
+          
+    
+            img
+                position: relative
+                animation: spin 70s infinite linear  
+
+
+        .vector_fil_wt
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: 20%
+            bottom: 40%
+            position: absolute
+            z-index: -1 !important
+            padding-top: 5%
+    
+            img
+                position: relative
+                animation: spin 60s infinite linear          
+        .blacktext_header
+            position: relative
+            z-index: 100
+            text-align: left
+            top: 200px  
+            width: 100%
+            color: #000000 !important
+            max-width: 500px
+            @media (min-width: 576px) and (max-width: 767.98px)
+                top: 100px
+            @media (max-width: 575.98px)
+                top: 100px
+
+            h3
+                color: #000000 !important
+                font-size: 2rem
+                line-height: 3rem
+                padding: 20px 0
+                font-weight: 600 !important
+                letter-spacing: -0.92px
+                @media (min-width: 576px) and (max-width: 767.98px)
+                    font-size: 1.5rem
+                    line-height: 2rem
+                @media (max-width: 575.98px)
+                    font-size: 1.5rem
+                    line-height: 2rem
+            h5
+                color: #213C77
+
+            p
+                font-size: 1rem
+                margin-bottom: 30px
+                letter-spacing: 0
+                line-height: 2rem
+                font-weight: 0 important
+                @include text_transition
+                animation-delay: 0.3s
+                
+
+
+                @media (min-width: 576px) and (max-width: 767.98px)
+                    line-height: 2.5rem
+                    
+                @media (max-width: 575.98px)
+                    line-height: 2rem
+                   
+
+                
+                @media only screen and (max-width: 550px)
+                    font-size: 1.5rem
+                    line-height: 2rem
+
+        .showcase-title-brand
+            position: relative
+            z-index: 100
+            text-align: left
+            top: 200px  
+            width: 100%
+      
+          
+            @media only screen and (max-width: 550px)
+                top: 200px  
+                width: 100%
+
+            @media (min-width: 576px) and (max-width: 767.98px)
+                // padding: 150px 0
+                top: 100px
+
+            // @media (max-width: 575.98px)
+            //     top: 100px
+        
+     
+
+        
+            .brand_logo
+                display: grid
+                grid-template-columns: 80% 15%
+                grid-gap: 5%
+                width: 100% !important
+                @media only screen and (max-width: 550px)
+                    grid-template-columns: 100%
+                
+    
+                img
+                    height: 150px
+                    // float: right
+                    @media only screen and (max-width: 550px)
+                        height: 100px
+            
+            h3
+                color: #fff
+                font-size: 2rem
+                line-height: 3rem
+                padding: 20px 0
+                font-weight: 600 !important
+                letter-spacing: -0.92px
+
+        .showcase-title
+            position: relative
+            z-index: 100
+            text-align: left
+            top: 200px  
+            width: 40%
+      
+          
+            @media only screen and (max-width: 550px)
+                top: 200px  
+                width: 100%
+
+            @media (min-width: 576px) and (max-width: 767.98px)
+                // padding: 150px 0
+                top: 100px
+
+            // @media (max-width: 575.98px)
+            //     top: 100px
+
+        
+              
+                
+
+
+
+            h3
+                color: #fff
+                font-size: 2rem
+                line-height: 3rem
+                padding: 20px 0
+                font-weight: 600 !important
+                letter-spacing: -0.92px
+
+            
+            p
+                font-size: 18px
+                color: #FFFFFF
+                margin-bottom: 30px
+                letter-spacing: -0.49px
+                line-height: 2rem
+                font-weight: 0 important
+                @include text_transition
+                animation-delay: 0.3s
+                
+
+
+                @media (min-width: 576px) and (max-width: 767.98px)
+                    line-height: 2.5rem
+                    font-size: 2rem
+                @media (max-width: 575.98px)
+                    line-height: 2rem
+                    font-size: 1.5rem
+
+                
+                @media only screen and (max-width: 550px)
+                    font-size: 1.5rem
+                    line-height: 2rem
+                
+
+            a 
+                color: #ffffff
+                font-size: 14px
+                text-transform: uppercase
+                font-weight: 600 !important
+                cursor: pointer
+                margin-top: 500px !important
+                @include text_transition
+                animation-delay: 0.4s
+                
+
+    .major_category_intro
+        background: #0C1D40 
+        padding: 100px 0
+        text-align: center
+        color: #ffffff
+       
+
+        h4
+            font-size: 24px
+            font-weight: 400
+            line-height: 2.5rem
+            padding: 0 150px
+            @media only screen and (max-width: 550px)
+                padding: 0
+            @media (max-width: 767.98px)
+                padding: 0
+    
+    .service
+        background: #3A3E41
+        color: #ffffff
+        height: 500px
+        width: 1045px
+        // padding: 50px 150px
+        position: relative
+        
+        @media only screen and (max-width: 550px)
+            height: 450px
+            width: 100%
+            
+        p
+
+            font-size: 28px
+            letter-spacing: 0
+            text-align: left
+            line-height: 40px
+            padding: 50px 200px 50px 80px
+            
+            @media only screen and (max-width: 550px)
+                font-size: 1.25rem    
+                line-height: 30px
+                padding: 30px 
+
+        a   
+            color: #ffffff !important
+            text-transform: uppercase
+            margin-top: 100px
+            display: inline-block
+            padding: 0 80px
+            font-size: 12px
+            font-weight: 500
+            // text-decoration: underline
+
+            @media only screen and (max-width: 550px)
+                padding: 0 30px
+                margin-top: 10px
+        a:hover
+            color: $primary !important
+            text-decoration: none
+
+        hr 
+            width: 100px !important
+            height: 2px
+            background: #ffffff !important
+            margin: 0 80px
+            display: inline-flex
+            @include text_transition 
+            animation-delay: 0.4s
+            
+            @media only screen and (max-width: 550px)
+                margin: 0 30px
+            
+        .vertical-line
+            width: 3px
+            background-color: $primary
+            height: 100%
+            float: left
+            margin: -50px 40px
+            @media only screen and (max-width: 550px)
+                 display: none
+        
+        .service_display_img
+            position: absolute
+            top: 50%
+            left: 210px
+            height: 500px
+            width: 85%
+            @media only screen and (max-width: 550px)
+                top: 65%
+                left: 0
+                height: 500px
+                width: 100%
+                // display: none
+           
+        
+    .service_blue_bg
+        background: #69B4CA
+        color: #ffffff
+       
+        @media only screen and (max-width: 550px)
+            height: 450px
+            width: 100%   
+            
+
+
+    // HERO showcase
+    @mixin showcase
+        background-size: cover
+        color: #ffffff
+        position: relative
+        text-align: left
+        overflow: hidden
+        width: 100%
+        min-height: 50%
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+    
+        @media only screen and (max-width: 550px)
+            max-width: 100%
+            height: auto
+            
+        
+        @media (min-width: 576px) and (max-width: 767.98px)
+            max-width: 100%
+            height: auto
+    
+        &:before 
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: rgba(0,0,0,0.6)
+
+    .showcase
+        background:  url("assets/img/slider.jpg") no-repeat center center scroll
+        // background-size: contain
+        // object-fit: cover
+
+        @include showcase
+         
+
+    .showcase2
+        background:  url("assets/img/slider2.jpeg")no-repeat center center scroll
+        @include showcase
+        
+
+    .showcase3
+        background:  url("assets/img/slider3.jpeg") no-repeat
+        @include showcase
+
+
+    .slider_content
+        position: relative
+        width: 100%
+        min-height: 95vh
+
+        @media (max-width: 575.98px)
+            min-height: 100vh
+
+   
+        .social_media
+            position: absolute
+            bottom: 40px
+            @media (min-width: 576px) and (max-width: 767.98px)
+                display: none
+            img
+                height: 10px
+    
+    
+        .social_icons
+            display: grid
+            grid-template-columns: repeat(3, auto)
+            max-width: 100px
+            grid-gap: 1%
+           
+
+            img
+                height: 16px    
+             
+        
+        .vector_fil
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: -10%
+            bottom: 65%
+            position: absolute
+            z-index: 1000 !important
+            padding-top: 5%
+    
+            img
+                position: relative
+                animation: spin 70s infinite linear  
+
+
+        .vector_fil_wt
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: 20%
+            bottom: 30%
+            position: absolute
+            z-index: 100 !important
+            padding-top: 5%
+    
+            img
+                position: relative
+                animation: spin 60s infinite linear   
+
+        .contact_sticky
+            position: absolute
+            bottom: 70px
+            transform: rotate(-90deg) 
+            z-index: 1
+            
+
+            @media only screen and (max-width: 550px)
+                display: none
+            
+            a
+                font-weight: 500
+                color: #FFFFFF
+                letter-spacing: 1.44px 
+                font-size: 12px
+                z-index: 100 !important
+
+            
+
+        .showcase-title-hero
+            position: absolute
+            z-index: 100
+            text-align: left
+            top: 30%  
+            max-width: 570px
+        
+      
+          
+            @media only screen and (max-width: 550px)
+                top: 200px  
+
+            @media (min-width: 576px) and (max-width: 767.98px)
+                // padding: 150px 0
+                top: 100px
+
+            // @media (max-width: 575.98px)
+            //     top: 100px
+        
+
+            h3
+                color: #fff
+                font-size: 2.5rem
+                line-height: 3rem
+                padding: 20px 0
+                font-weight: 600 !important
+                letter-spacing: 0
+                @include text_transition
+
+                @media only screen and (max-width: 550px)
+                    font-size: 2.2rem
+                    line-height: 2.5rem
+                @media (min-width: 576px) and (max-width: 767.98px)
+                    font-size: 2rem
+                    line-height: 2.5rem
+
+            p
+                font-size: 1.5rem
+                color: #FFFFFF
+                margin-bottom: 30px
+                letter-spacing: -0.49px
+                line-height: 2rem
+                font-weight: 0 important
+                @include text_transition
+                animation-delay: 0.3s
+                
+
+
+                @media (min-width: 576px) and (max-width: 767.98px)
+                    line-height: 2.5rem
+                    font-size: 1.5rem
+                @media (max-width: 575.98px)
+                    line-height: 2rem
+                    font-size: 1.5rem
+
+                
+                @media only screen and (max-width: 550px)
+                    font-size: 1.5rem
+                    line-height: 2rem
+                
+
+            a 
+                color: #ffffff
+                font-size: 14px
+                text-transform: uppercase
+                font-weight: 600 !important
+                cursor: pointer
+                margin-top: 500px !important
+                @include text_transition
+                animation-delay: 0.4s
+                
+
+
+    // About
+    .page-section-white
+        background: #fff
+        padding: 100px 0
+        position: relative
+        overflow: hidden
+        margin-bottom: 100px 
+        @media only screen and (max-width: 550px)
+            padding: 0 0 50px 0
+
+        .vector_fil
+            max-width: 100%
+            width: auto
+            height: 100%
+            right: 70%
+            bottom: 40%
+            position: absolute
+            z-index: 100 !important
+            padding-top: 5%
+    
+            img
+                position: relative
+                // animation: spin 30s infinite linear
+        
+        .oval_vector
+            position: absolute
+            top: 32%
+            z-index: 100
+            @media only screen and (max-width: 550px)
+                display: none
+            @media (min-width: 768px) and (max-width: 991.98px)
+                display: none
+
+        .vector_logo
+            position: absolute
+            left: 47%
+            top: 50%
+            @media only screen and (max-width: 550px)
+                display: none
+
+        .vector_icon_about_intro
+            position: absolute
+            left: 5%
+            top: 1%
+            // z-index: -1 !important
+    
+            @media only screen and (max-width: 550px)
+                display: none
+
+
+    .owl-dots
+        text-align: center
+        position: absolute 
+        bottom: 5px
+        width: 100%
+        // margin: 0 70px
+        -webkit-backface-visibility: hidden
+        -moz-backface-visibility: hidden
+        -ms-backface-visibility: hidden
+        backface-visibility: hidden
+        @media only screen and (max-width: 550px)
+            margin: 0
+        @media (min-width: 576px) and (max-width: 767.98px)
+            display: none
+
+        button.owl-dot
+            border-radius: 50px
+            height: 15px
+            width: 15px
+            display: inline-block
+            background-color: #000
+            margin: 50px 5px 
+    
+        .active
+            background-color: #fff !important
+                
+       
+
+    .tech_services
+        padding: 150px 0 0 0
+        margin: 0
+        position: relative
+        margin-bottom: 50px
+        @media only screen and (max-width: 550px)
+            padding: 80px 0 0 0 
+
+        h2
+            font-size: 26px
+            color: #222222
+            text-align: left
+            margin-top: 20px
+
+        p
+           
+            font-size: 20px
+            color: #4A4A4A
+            line-height: 36px
+            margin: 30px 0
+
+        a
+            color: $primary
+            font-weight: 600
+            font-size: 12px
+
+
+    .hr-header 
+        display: inline-block
+   
+   
+    .service-header
+        // margin: 20px 80px
+        padding: 20px 120px 
+        @media only screen and (max-width: 550px)
+            margin: 20px
+            padding: 16px
+
+        h2
+            font-size: 1.5em
+            @media only screen and (max-width: 550px)
+                font-size: 1.5em
+
+
+    .service-header_col
+        margin: 20px 290px
+    
+    hr
+        width: 200px
+        height: 2px
+        background: $primary
+        margin-bottom: 10px
+        display: inline-flex
+        @include text_transition
+        animation-delay: 0.4s
+        
+
+
+
+
+    // page sections
+    .page-section-home
+        background: #F4F8FC
+        padding: 150px 0
+        margin: 0
+        position: relative
+        overflow: hidden
+        @media only screen and (max-width: 550px)
+            padding: 10px 0
+        @media (min-width: 768px) and (max-width: 991.98px)
+            padding: 10px 0
+
+
+        hr
+            width: 200px
+            height: 2px
+            background: $primary
+            margin-bottom: 10px
+            display: inline-flex
+            @include text_transition
+            animation-delay: 0.4s
+            
+
+            
+       
+          
+        .testimonial
+            text-align: center
+            position: relative
+
+            h6
+                font-size: 18px
+                text-transform: uppercase
+                color: $primary
+                margin: 20px 0
+                font-weight: 700
+                @include text_transition
+                animation-delay: 0.1s
+                letter-spacing: 0.67px
+
+            h4
+                font-size: 30px
+                color: #282828
+                letter-spacing: 0
+                line-height: 48px
+                padding: 0 120px
+                @media only screen and (max-width: 550px)
+                    padding: 0
+                    font-size: 24px
+
+            .testimonial_author
+                margin-top: 100px
+                color: #000000
+                
+
+                h3
+                    font-size: 20px
+                    color: #282828
+                    letter-spacing: 0
+                    line-height: 40px
+                    text-align: center 
+
+            .vector_shape_testimonial
+                max-width: 100%
+                width: auto
+                height: 200px
+                left: 70%
+                bottom: 100%
+                position: absolute
+                z-index: 1000 !important
+                padding-top: 5% 
+               
+
+                @media only screen and (max-width: 550px)
+                    display: none
+
+            .joint_vector_shape_testimonial
+                max-width: 100%
+                width: auto
+                height: 200px
+                right: 75%
+                top: 40%
+                position: absolute
+                z-index: 1000 !important
+                padding-top: 5% 
+
+                @media only screen and (max-width: 550px)
+        
+
+
+                
+        .vector_squre
+            max-width: 100%
+            width: auto
+            // animation: spin 70s infinite linear 
+            height: 200px
+            right: 7%
+            bottom: 60%
+            position: absolute
+            // z-index: 100 !important
+            // padding-top: 10%
+            @media only screen and (max-width: 550px)
+                display: none 
+            @media (min-width: 768px) and (max-width: 991.98px)
+                display: none 
+            
+        
+        
+
+        .vector_squre_vision
+            max-width: 100%
+            width: auto
+            height: 200px
+            left: 30%
+            bottom: 70%
+            position: absolute
+            z-index: 100 !important
+            padding-top: 10%
+            @media only screen and (max-width: 550px)
+                // display: none
+    
+            img
+                position: relative
+                // animation: spin 70s infinite linear
+
+        // service
+        .services_section
+            color: #282828
+
+
+            .section_content
+                padding: 50px 0
+                position: relative
+               
+            
+                hr
+                    border: 1px solid $primary
+                    text-align: left 
+                    // margin: 0 auto 20px 0
+                    width: 120px
+                    @include text_transition
+                    animation-delay: 0.1s
+                    
+                           
+        
+                h6
+                    font-size: 18px
+                    text-transform: uppercase
+                    color: $primary
+                    // margin: 20px 0
+                    font-weight: 700
+                    @include text_transition
+                    animation-delay: 0.1s
+                    letter-spacing: 0.67px
+                    text-align: left
+
+                h3
+                    font-size: 28px
+                    color: #222222
+                    font-weight: 600 
+                    line-height: 2.2rem
+                    @include text_transition
+                    animation-delay: 0.2s
+                    text-align: left
+
+                
+
+                a
+                    color: $primary
+                    animation: textAnimation
+                    text-transform: uppercase
+                    cursor: pointer
+                    animation-delay: 0.2s
+                    @include text_transition
+                    text-align: left
+                    font-weight: 600
+                    padding: 16px
+
+                p
+                    font-size: 18px
+                    line-height: 2rem
+                    color: #4A4A4A
+                    margin-top: 10px
+                    text-align: left
+                    @include text_transition
+                    animation-delay: 0.2s
+                    
+                    // @media only screen and (max-width: 550px)
+                    //     font-size: 1.2rem
+                    //     text-align: justify
+
+                ul 
+                    list-style: none
+                    line-height: 3rem
+                    margin: 20px 0
+                    margin-left: -1em
+                
+        
+                    li
+                        
+                        font-size: 18px
+                        margin-left: -1em
+        
+        
+                    li::before 
+                        content: "\2022"
+                        color: $primary
+                        font-weight: bolder
+                        display: inline-block
+                        width: 1em
+                        // margin-left: -1em
+                        font-size: 40px
+                        // margin: 0 important
+
+
+            .our_contact
+    
+    
+                h1
+                    font-size: 25px
+                    color: #282828
+                    font-weight: 800 
+                    line-height: 2.2rem
+                    @include text_transition
+                    animation-delay: 0.2s
+                    
+                    text-align: left
+    
+                p
+                    font-size: 18px
+                    line-height: 2rem
+                    color: #4A4A4A
+                    margin-top: 10px
+                    text-align: left
+                    @include text_transition
+                    animation-delay: 0.2s
+                    
+                    // margin-bottom: 100px
+                
+                a
+                    color: $primary
+                    text-transform: lowercase
+                    font-weight: 500
+                    text-decoration: underline
+                    padding: 0 !important
+                
+                   
+
+
+                   
+            .green_oval_vector
+                position: absolute
+                top: 86%
+                z-index: 1
+            
+
+                @media only screen and (max-width: 550px)
+                    display: none
+            
+            .vector_squre_pro
+                max-width: 100%
+                width: auto
+                height: 200px
+                left: 35%
+                bottom: 50%
+                position: absolute
+                z-index: 100 !important
+                padding-top: 10%
+                overflow: hidden
+                @media only screen and (max-width: 550px)
+                    // display: none
+        
+                img
+                    position: relative
+                    //  animation: spin 70s infinite linear  
+            
+              
+                       
+
+        .our_people
+            height: 600px
+
+
+        .card
+
+            border: none
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,0.07)
+            border-radius: 5px
+        
+
+            .card-body
+                padding: 50px 30px 
+                @media (min-width: 768px) and (max-width: 991.98px)
+                    padding: 16px
+
+
+            .card-img-top
+                height: 300px
+                @media (min-width: 768px) and (max-width: 991.98px)
+                    height: 200px
+            h5
+  
+                font-size: 20px
+                color: #213C77
+                letter-spacing: 0.5px
+                font-weight: 800
+                @media (min-width: 768px) and (max-width: 991.98px)
+                    font-size: 1rem
+
+            p
+                color:  #213C77
+                @media (min-width: 768px) and (max-width: 991.98px)
+                    font-size: 1rem
+
+
+                   
+    
+        .services_card_1
+            background: #BCDFFC !important
+
+        .services_card_2
+            background: #FDA9A9
+
+        .services_card_3
+            background: #69B4CA
+   
+
+
+
+    // .vector_squre
+    //     max-width: 100%
+    //     width: auto
+    //     // position: relative
+    //     animation: spin 70s infinite linear 
+    //     height: 200px
+    //     right: 10%
+    //     bottom: 70%
+    //     position: absolute
+    //     z-index: 10000000 !important
+    //     // padding-top: 10%
+    //     @media only screen and (max-width: 550px)
+    //         display: none 
+    
+    .vector_squre_fil
+        max-width: 100%
+        width: auto
+        height: 200px
+        right: 20%
+        bottom: 75%
+        position: absolute
+        z-index: 100 !important
+        padding-top: 10%
+        @media only screen and (max-width: 550px)
+            display: none
+
+        img
+            position: relative
+            // animation: spin 70s infinite linear  
+
+    .page-section
+        background: #F4F8FC
+        padding: 100px 0
+        margin: 0
+        position: relative
+        @media only screen and (max-width: 550px)
+            padding: 50px 0
+        
+
+        h4
+         
+            // font-weight: 500
+            font-size: 24px
+            color: #222222
+            line-height: 2.3rem
+            padding: 70px 20px
+            text-align: center
+            @include text_transition
+            animation-delay: 0.2s
+            
+            @media only screen and (max-width: 550px)
+                padding: 20px
+                font-size: 20px
+                line-height: 1.6rem
+
+        img
+            max-height: 400px
+            min-height: 400px
+            position: absolute
+
+           
+            
+            @media only screen and (max-width: 550px)
+                min-height: 250px
+                max-height: 250px
+
+    
+
+
+    .content-text
+        display: grid
+        grid-template-columns: 45% 45%
+        grid-gap: 10%
+        text-align: justify
+       
+        
+        
+        @media only screen and (max-width: 550px)
+              grid-template-columns: 100%
+              grid-gap: 5%
+       
+
+        @media (min-width: 576px) and (max-width: 767.98px)
+             grid-template-columns: 100%
+
+        
+
+        .section_content
+            padding: 50px 0
+            position: relative
+            @media only screen and (max-width: 550px)
+                padding: 0
+        
+           
+        
+            hr
+                border: 1px solid $primary
+                text-align: left 
+                // margin: 0 auto 20px 0
+                width: 120px
+                @include text_transition
+                animation-delay: 0.2s
+                @media only screen and (max-width: 550px)
+                    // text-align: center
+                    // margin: auto
+                       
+    
+            h6
+    
+                font-size: 20px
+                text-transform: uppercase
+                color: $primary
+                // margin: 20px 0
+                // font-weight: 700
+                @include text_transition
+                animation-delay: 0.1s
+                
+                letter-spacing: 0.67px
+                text-align: left
+            h3
+                font-size: 28px
+                color: #222222
+                font-weight: 600 
+                line-height: 2.2rem
+                @include text_transition
+                animation-delay: 0.2s              
+                text-align: left
+                @media only screen and (max-width: 550px)
+                    // text-align: center
+            
+
+            h4
+                font-size: 24px
+                font-weight: 400
+                line-height: 2.5rem
+                color: #222222
+                margin-top: 20px
+                text-align: left
+                @include text_transition
+                animation-delay: 0.2s
+                margin-bottom: 50px
+                // @media only screen and (max-width: 550px)
+             
+                //     text-align: left
+
+
+
+            p
+                font-size: 1rem
+                line-height: 2.2rem
+                color: #4A4A4A
+                margin-top: 20px
+                text-align: left
+                @include text_transition
+                animation-delay: 0.2s
+                
+                // @media only screen and (max-width: 550px)
+                //     font-size: 1.2rem
+                //     text-align: justify
+           
+    
+            a 
+                color: $primary
+                font-size: 12px
+                text-transform: uppercase
+                font-weight: 600 !important
+                cursor: pointer
+                margin-top: 500px !important
+                @include text_transition
+                animation-delay: 0.4s
+                
+                animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1)
+                padding: 0 10px
+            ul 
+                    list-style: none
+                    line-height: 3rem
+                    margin: 20px 0
+                    margin-left: -1em
+                
+        
+                    li
+                        
+                        font-size: 1rem
+                        margin-left: -1em
+                        color: $secondary
+                        @include text_transition
+        
+        
+                    li::before 
+                        content: "\2022"
+                        color: $primary
+                        font-weight: bolder
+                        display: inline-block
+                        width: 1em
+                        // margin-left: -1em
+                        font-size: 20px
+                        // margin: 0 important
+  
+        img
+            width: 100%
+            min-height: 600px
+            /* max-height: 600px */
+            padding: 50px
+            @media only screen and (max-width: 550px)
+                min-height: 0
+
+        
+    
+           
+       
+        .project_img
+            width: 100% !important
+            min-height: 400px !important
+            max-height: 400px !important
+            position: relative
+            z-index: 10 !important
+          
+            @media only screen and (max-width: 550px)
+                min-height: 0
+   
+    .our_people_img
+        
+        font-size: 24px
+        text-align: center
+        font-weight: 600
+        display: grid
+        place-items: center
+
+        a
+            color: $primary !important
+        
+
+    our_people
+            width: auto
+            min-height: 600px
+            max-height: 600px
+            @media only screen and (max-width: 550px)
+                min-height: 0
+
+
+    // clients section
+    .client_section
+        text-align: center
+        padding: 150px 0
+        background: #ffffff
+        @media only screen and (max-width: 550px)
+            padding: 100px 0
+
+       
+        h6
+
+            font-size: 18px
+            text-transform: uppercase
+            color: $primary
+            font-weight: 700
+            @include text_transition
+            animation-delay: 0.1s
+            letter-spacing: 0.67px
+        
+        h3
+            font-size: 28px
+            color: #222222
+            font-weight: 600 
+            line-height: 2.2rem
+            @include text_transition
+            animation-delay: 0.2s
+            
+            @media only screen and (max-width: 550px)
+                text-align: center
+        
+
+        h2
+            font-size: 18px
+            color: #222222
+            font-weight: 600 
+            line-height: 2rem
+            @include text_transition
+            animation-delay: 0.2s
+        
+            @media only screen and (max-width: 550px)
+                text-align: center
+         
+
+        p
+            font-size: 18px
+            line-height: 2.2rem
+            color: #282828
+            margin-top: 20px
+            @include text_transition
+            animation-delay: 0.2s
+
+        h4
+            font-size: 1.1rem
+            color: #56616D
+            font-weight: 400 
+            @include text_transition
+            animation-delay: 0.2s
+            letter-spacing: 0
+            text-align: center
+            line-height: 1.6rem
+
+        .icons
+            height: 90px
+            width: auto
+            @include text_transition
+            animation-delay: 0.2s
+
+
+    .client_logo
+        border: solid 1px #637B6F
+        height: 150px
+        width: 150px
+        background-color: #ffffff
+        border-radius: 50%
+        display: flex
+        
+
+        img 
+      
+            margin: auto
+            padding: 10px
+        
+
+    .client_logo_div
+        margin-top: 100px !important
+        
+
+    // call to action
+    .call_to_action_section
+        background: $primary
+        padding: 250px 16px
+        color: #ffffff
+        text-align: left
+        position: relative
+        z-index: 1
+        overflow: hidden
+        @media only screen and (max-width: 550px)
+            padding: 100px 16px
+            text-align: left
+
+
+        @media (min-width: 576px) and (max-width: 767.98px)
+            padding: 0
+
+        div
+            // padding: 100px 200px
+            @media only screen and (max-width: 550px)
+                padding: 50px 0
+            @media (min-width: 576px) and (max-width: 767.98px)
+                padding: 100px 0
+
+                h1
+                    font-size: 1.5rem
+                    padding: 16px
+                    
+                    @media (max-width: 575.98px)
+                       
+                        line-height: 1rem
+
+            @media (min-width: 768px) and (max-width: 991.98px)
+                padding: 20px
+
+        .vector_fil
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: -10%
+            bottom: 65%
+            position: absolute
+            z-index: -1 !important
+            padding-top: 5%
+
+    
+            img
+                position: relative
+                animation: spin 70s infinite linear  
+
+        .vector_fil_wt
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: 10%
+            bottom: 50%
+            position: absolute
+            z-index: -1 !important
+            padding-top: 5%
+        
+    
+            img
+                position: relative
+                animation: spin 60s infinite linear 
+
+        .vector_shape
+            max-width: 100%
+            width: auto
+            height: 200px
+            right: 15%
+            bottom: 30%
+            position: absolute
+            z-index: -1 !important
+            padding-top: 5% 
+            @media only screen and (max-width: 550px)
+                // display: none
+        .red_oval_vector
+            position: absolute
+            bottom: 33%
+            z-index: -1 !important
+            @media only screen and (max-width: 550px)
+                display: none
+
+
+        
+
+             
+        h6
+
+            font-size: 18px
+            text-transform: uppercase
+            color: #fff
+            // margin: 20px 0
+            font-weight: 700
+            @include text_transition
+            animation-delay: 0.1s
+            letter-spacing: 0.67px
+        h3
+            font-size: 3rem
+            color: #FFFFFF !important
+            padding: 20px 0
+            font-weight: 600 !important
+            line-height: 4rem
+            letter-spacing: -0.92px
+            @include text_transition
+            animation-delay: 0.2s
+            text-align: left
+
+            @media only screen and (max-width: 550px)
+                font-size: 2rem
+                line-height: 3.6rem
+
+
+                
+        a 
+            color: #fff
+            font-size: 1rem
+            text-transform: uppercase
+            font-weight: 600 !important
+            cursor: pointer
+            margin-top: 500px !important
+            @include text_transition
+            animation-delay: 0.4s
+            padding: 0 10px
+
+
+    .contact-form
+        max-width: 500px
+        margin: auto
+        padding: 10px
+        background: #fff
+        text-align: center
+        position: relative
+
+
+        .vector_icon_contact
+            position: absolute
+            right: 60%
+            top: 1%
+    
+            @media only screen and (max-width: 550px)
+                display: none
+
+        h1
+            font-size: 35px
+            color: #282828
+            font-weight: 500 
+            line-height: 2.2rem
+            @include text_transition
+            animation-delay: 0.2s
+            padding: 20px 0
+            
+
+        p
+            font-size: 18px
+            line-height: 2rem
+            color: #4A4A4A
+            margin-top: 10px
+            @include text_transition
+            animation-delay: 0.3s
+  
+       
+    
+        form
+            color: #ffffff
+            text-align: center
+            padding: 20px 0 100px 0
+            // max-width: 50%
+            @include text_transition
+            animation-delay: 0.4s
+            @media only screen and (max-width: 550px)
+                padding:    16px
+            @media (min-width: 768px) and (max-width: 991.98px)
+                padding: 16px
+
+
+           
+           
+    
+            input
+                height: 60px !important
+                // width: 500px
+                border-radius: 0
+                border: 0
+                outline: none
+                background: #F2F2F2
+                color: #A2A1A1
+
+            input::placeholder
+                color: #A2A1A1
+
+            textarea
+                // width: 500px
+                border-radius: 0
+                border: 0
+                outline: none
+                background: #F2F2F2
+                color: #A2A1A1
+
+            
+           
+            a 
+                color: $button
+                text-decoration: underline
+                padding: 0
+            
+            a:hover
+                color: #000000
+    
+            button
+                width: 100%
+                color: #ffffff
+                background: $primary
+                padding: 20px 190px
+                cursor: pointer
+                outline: none
+                transition: 0.5s
+                box-shadow: 0 10px 20px rgba(0,0,0,0.10)
+                font-size: 16px
+                font-weight: 700
+                text-decoration: none
+                display: inline-block
+                border: 0
+                border-radius: 0
+                text-transform: uppercase
+                @media only screen and (max-width: 550px)
+                    padding: 20px 100px
+
+                
+            button:hover
+                color: $primary
+                background: #fff
+                box-shadow: 0 10px 20px rgba(0,0,0,0.25)
+                transform: translateX(-3px)
+    //footer
+    footer
+        background: #171615
+        padding: 200px 0
+        color: #fff
+        @media only screen and (max-width: 550px)
+           padding: 100px 16px
+
+        p
+            padding: 0 0
+            font-size: 14px
+            margin: 0
+
+
+        .social_icons
+            display: grid
+            grid-template-columns: repeat(3, auto)
+            max-width: 100px
+            grid-gap: 5%
+           
+           
+
+            img
+                height: 16pX
+
+        h4
+           
+            font-size: 18px
+            font-weight: 500
+            text-align: left
+            text-transform: uppercase
+            @media only screen and (max-width: 550px)
+                margin-top: 50px
+
+        a
+
+            font-size: 12px
+            color: #F6FFF0
+            text-align: center
+            cursor: pointer
+            transition: 0.5s
+
+        .footer_links
+            display: grid
+            grid-template-columns: repeat(5, auto)
+
+            @media only screen and (max-width: 550px)
+                grid-template-columns: repeat(2,auto)
+
+            @media (min-width: 576px) and (max-width: 767.98px)
+                grid-template-columns: repeat(2,auto)
+
+// navigation
+.carousel-item
+    height: 65vh
+    min-height: 350px
+    background: no-repeat center center scroll
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+
+.fix-im
+  position: relative
+  bottom: 11rem
+
+@media screen and (max-width: 768px)
+  .flex-100
+    -ms-flex: 0 0 100%
+    flex: 0 0 100%
+    max-width: 100%
+  .fix-im
+    bottom: 0rem
+
+.ugali
+  background: #000000
+  padding: 6px
+
+
+
+
+
+
+    
+@keyframes spin
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+    
+@keyframes textAnimation
+    0%
+        opacity: 0
+        transform: translateY(50px)
+    
+    100%
+        opacity: 1
+        transform: translateY(0px)
+        
